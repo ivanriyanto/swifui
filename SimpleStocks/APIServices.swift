@@ -11,15 +11,15 @@ enum APIHost {
     static let baseURL = "https://api.twelvedata.com"
 }
 
-enum endPoint {
+enum EndPoint {
     static let price = "/price"
 }
 
 struct APIServices {
-    let apiKey = "2947d25d0fde46f0aac63481e8f34ac6"
+    let apiKey = Bundle.main.twelveDataAPIKey
     
     func fetchPrice(for symbol: String) async throws -> Stocks {
-        guard var components = URLComponents(string: "\(APIHost.baseURL)\(endPoint.price)") else {
+        guard var components = URLComponents(string: "\(APIHost.baseURL)\(EndPoint.price)") else {
             throw URLError(.badURL)
         }
         
