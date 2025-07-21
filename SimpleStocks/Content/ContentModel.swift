@@ -21,7 +21,7 @@ internal enum MarketStatus: String {
 
 }
 
-struct Stocks: Decodable {
+struct Stocks: Codable {
     let name: String?
     let price: String
 
@@ -34,5 +34,10 @@ struct Stocks: Decodable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         name = try container.decodeIfPresent(String.self, forKey: .name) ?? "Unknown"
         price = try container.decode(String.self, forKey: .price)
+    }
+    
+    init(name: String?, price: String) {
+            self.name = name
+            self.price = price
     }
 }

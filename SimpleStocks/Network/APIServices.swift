@@ -7,26 +7,35 @@
 
 import Foundation
 
-enum APIHost {
-    static let baseURL = "https://api.twelvedata.com"
+protocol StocksService {
+    func fetchPrice(for symbol: String) async throws -> Stocks
 }
 
-enum EndPoint {
-    static let price = "/price"
+struct MockAPIServices: StocksService {
+    func fetchPrice(for symbol: String) async throws -> Stocks {
+        try await Task.sleep(nanoseconds: 1000000000)
+        if symbol == "AAPL" {
+            return Stocks(name: "AAPL", price: "209")
+        } else if symbol == "NVDA" {
+            return Stocks(name: "AAPL", price: "144")
+        } else {
+            return Stocks(name: "AAPL", price: "0")
+        }
+        
+    }
 }
 
-struct APIServices {
-    let apiKey = Bundle.main.twelveDataAPIKey
+struct APIServices: StocksService {
+    let key = APIHost.apiKey
     
     func fetchPrice(for symbol: String) async throws -> Stocks {
-        guard var components = URLComponents(string: "\(APIHost.baseURL)\(EndPoint.price)") else {
+        let endpoint = EndPoint.price(symbol: symbol)
+        guard var components = URLComponents(string: APIHost.baseURL + endpoint.path) else {
             throw URLError(.badURL)
         }
         
-        components.queryItems = [
-            URLQueryItem(name: "symbol", value: symbol),
-            URLQueryItem(name: "apikey", value: apiKey)
-        ]
+        components.queryItems = endpoint.queryItems
+        
         
         guard let url = components.url else {
             throw URLError(.badURL)
@@ -43,7 +52,7 @@ struct APIServices {
             
             return try JSONDecoder().decode(Stocks.self, from: data)
         } catch {
-            print("❌ Error decoding: \(error)")
+            print("Error decoding: \(error)")
             throw error
         }
         

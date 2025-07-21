@@ -14,7 +14,7 @@ class StocksViewModel: ObservableObject {
     @Published var isLoading = false
     @Published var errorMessage: String?
 
-    private let apiServices = APIServices()
+    private let apiServices = MockAPIServices()
     
     func getStockPrice(symbol: String) async {
         isLoading = true
