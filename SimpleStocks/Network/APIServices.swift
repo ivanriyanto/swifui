@@ -29,7 +29,7 @@ struct APIServices: StocksService {
     let key = APIHost.apiKey
     
     func fetchPrice(for symbol: String) async throws -> Stocks {
-        let endpoint = EndPoint.price(symbol: symbol)
+        let endpoint = Endpoint.price(symbol: symbol)
         guard var components = URLComponents(string: APIHost.baseURL + endpoint.path) else {
             throw URLError(.badURL)
         }
