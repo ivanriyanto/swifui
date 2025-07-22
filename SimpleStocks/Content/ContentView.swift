@@ -1,64 +1,9 @@
-////
-////  ContentView.swift
-////  SimpleStocks
-////
-////  Created by Ivan Riyanto on 24/06/25.
-////
 //
-//import SwiftUI
+//  ContentView.swift
+//  SimpleStocks
 //
-//struct ContentView: View {
-//    @StateObject private var viewModel = StocksViewModel()
-//    @State private var symbol = "AAPL"
+//  Created by Ivan Riyanto on 24/06/25.
 //
-//    var body: some View {
-//
-//        NavigationStack {
-//            VStack(spacing: 12) {
-//                ForEach(viewModel.stocks) { stock in
-//                    StockCardView(name: stock.name, currPrice: 1000, currStat: .bullish)
-//                }
-//            }
-//            .padding()
-//            .navigationTitle("Stocks")
-//            .toolbar {
-//                Button("Add") {
-//                    viewModel.addStock(name: "PGEO", price: 1350, stat: .bearish)
-//                }
-//            }
-//        }
-//
-//    }
-//
-//}
-//
-//struct StockCardView: View {
-//    let name: String
-//    let currPrice: Int
-//    let currStat: MarketStatus
-//
-//    var body: some View {
-//        HStack{
-//            VStack {
-//                Text(name)
-//                    .font(.headline)
-//                Text(String(currPrice))
-//            }
-//            Text(currStat.rawValue)
-//        }
-//        .padding()
-//        .background(Color.gray.opacity(0.1))
-//        .cornerRadius(10)
-//    }
-//}
-//
-//
-//
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
 
 import SwiftUI
 
@@ -92,5 +37,11 @@ struct ContentView: View {
             .buttonStyle(.borderedProminent)
         }
         .padding()
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }
