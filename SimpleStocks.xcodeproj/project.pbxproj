@@ -27,8 +27,8 @@
 		7C40D5A92E0A9C0100CCAD39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7C40D5B02E0D20A600CCAD39 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		7C40D5B22E0D217900CCAD39 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		7CBAB5042E33422800CE6EC9 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		7CCE10DC2E142D94006E0C42 /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
-		7CCE10DF2E1673F6006E0C42 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		7CCE10E02E167406006E0C42 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		7CCE10E12E1674DC006E0C42 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		7CCE10E62E167D7D006E0C42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 				7CCE10E72E16841A006E0C42 /* Network */,
 				7CCE10E32E167521006E0C42 /* Content */,
 				7CCE10E12E1674DC006E0C42 /* Bundle.swift */,
-				7CCE10DF2E1673F6006E0C42 /* Debug.xcconfig */,
+				7CBAB5042E33422800CE6EC9 /* Debug.xcconfig */,
 				7CCE10E02E167406006E0C42 /* Release.xcconfig */,
 				7C40D5A62E0A9C0100CCAD39 /* Assets.xcassets */,
 				7C40D5A82E0A9C0100CCAD39 /* Preview Content */,
@@ -311,7 +311,6 @@
 		};
 		7C40D5AE2E0A9C0100CCAD39 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7CCE10DF2E1673F6006E0C42 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
