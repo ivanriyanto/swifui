@@ -30,34 +30,51 @@ struct APIServices: StocksService {
     
     func fetchPrice(for symbol: String) async throws -> Stocks {
         let endpoint = Endpoint.price(symbol: symbol)
+        return try await request(endpoint, responseType: Stocks.self)
+    }
+
+    
+}
+
+
+
+extension APIServices {
+    private func request<T: Decodable>(_ endpoint: Endpoint, method: HTTPMethod = .GET, responseType: T.Type) async throws -> T {
         guard var components = URLComponents(string: APIHost.baseURL + endpoint.path) else {
             throw URLError(.badURL)
         }
         
         components.queryItems = endpoint.queryItems
-        
-        
         guard let url = components.url else {
             throw URLError(.badURL)
         }
-        print("url \(url)")
+        var request = URLRequest(url: url)
+        request.httpMethod = method.rawValue
+        request.timeoutInterval = 15
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        print("Requesting from: \(url)")
+        
+        let (data, response) = try await URLSession.shared.data(for: request)
+        guard let httpResponse = response as? HTTPURLResponse else {
+            throw URLError(.badServerResponse)
+        }
+
+        guard (200...299).contains(httpResponse.statusCode) else {
+            throw APIError.serverError(status: httpResponse.statusCode)
+        }
+
+        
+        print("Raw: \(String(data: data, encoding: .utf8) ?? "Unreadable")")
         
         do {
-            let (data, response) = try await URLSession.shared.data(from: url)
-            
-            print("RAW RESPONSE:\n", String(data: data, encoding: .utf8) ?? "Invalid Data")
-            guard let httpResponse = response as? HTTPURLResponse, (200...299).contains(httpResponse.statusCode) else {
-                throw URLError(.badServerResponse)
-            }
-            
-            return try JSONDecoder().decode(Stocks.self, from: data)
+            return try JSONDecoder().decode(T.self, from: data)
         } catch {
-            print("Error decoding: \(error)")
-            throw error
+            print("Decoding error: \(error)")
+            throw APIError.decodingFailed(error)
         }
-        
-        
     }
 }
+
 
 
