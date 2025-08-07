@@ -8,19 +8,6 @@
 import Foundation
 import SwiftUI
 
-internal enum MarketStatus: String {
-    case bullish
-    case bearish
-
-    var color: Color {
-        switch self {
-        case .bullish: return .green
-        case .bearish: return .red
-        }
-    }
-
-}
-
 struct Stocks: Codable {
     let name: String?
     let price: String
