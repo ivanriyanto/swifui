@@ -8,25 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		7C40D5A32E0A9BFF00CCAD39 /* SimpleStocksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C40D5A22E0A9BFF00CCAD39 /* SimpleStocksApp.swift */; };
-		7C40D5A52E0A9BFF00CCAD39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C40D5A42E0A9BFF00CCAD39 /* ContentView.swift */; };
+		7C40D5A52E0A9BFF00CCAD39 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C40D5A42E0A9BFF00CCAD39 /* HomeView.swift */; };
 		7C40D5A72E0A9C0100CCAD39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C40D5A62E0A9C0100CCAD39 /* Assets.xcassets */; };
 		7C40D5AA2E0A9C0100CCAD39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C40D5A92E0A9C0100CCAD39 /* Preview Assets.xcassets */; };
-		7C40D5B12E0D20A600CCAD39 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C40D5B02E0D20A600CCAD39 /* ContentViewModel.swift */; };
-		7C40D5B32E0D217900CCAD39 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C40D5B22E0D217900CCAD39 /* ContentModel.swift */; };
+		7C40D5B12E0D20A600CCAD39 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C40D5B02E0D20A600CCAD39 /* HomeViewModel.swift */; };
+		7C40D5B32E0D217900CCAD39 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C40D5B22E0D217900CCAD39 /* HomeModel.swift */; };
 		7CCE10DD2E142D94006E0C42 /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCE10DC2E142D94006E0C42 /* APIServices.swift */; };
 		7CCE10E22E1674DC006E0C42 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCE10E12E1674DC006E0C42 /* Bundle.swift */; };
 		7CCE10E92E168430006E0C42 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCE10E82E168430006E0C42 /* Endpoint.swift */; };
 		7CCE10EB2E1684CD006E0C42 /* APIHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCE10EA2E1684CD006E0C42 /* APIHost.swift */; };
+		7CD692662E336C4E0038B3E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD692652E336C4E0038B3E8 /* ContentView.swift */; };
+		7CD692692E3375640038B3E8 /* MyStockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD692682E3375640038B3E8 /* MyStockView.swift */; };
+		7CD6926B2E337B6A0038B3E8 /* MyStockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6926A2E337B6A0038B3E8 /* MyStockModel.swift */; };
+		7CD6926D2E3389AA0038B3E8 /* MyStockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6926C2E3389AA0038B3E8 /* MyStockViewModel.swift */; };
+		7CD692702E3CC5590038B3E8 /* MyStockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6926F2E3CC5590038B3E8 /* MyStockDetailView.swift */; };
+		7CD692722E3CC5640038B3E8 /* MyStockDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD692712E3CC5640038B3E8 /* MyStockDetailModel.swift */; };
+		7CD692742E3CC5710038B3E8 /* MyStockDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD692732E3CC5710038B3E8 /* MyStockDetailViewModel.swift */; };
+		7CD692762E40AEDE0038B3E8 /* CurrencyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD692752E40AEDE0038B3E8 /* CurrencyHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7C40D59F2E0A9BFF00CCAD39 /* SimpleStocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleStocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C40D5A22E0A9BFF00CCAD39 /* SimpleStocksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStocksApp.swift; sourceTree = "<group>"; };
-		7C40D5A42E0A9BFF00CCAD39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7C40D5A42E0A9BFF00CCAD39 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7C40D5A62E0A9C0100CCAD39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C40D5A92E0A9C0100CCAD39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7C40D5B02E0D20A600CCAD39 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
-		7C40D5B22E0D217900CCAD39 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		7C40D5B02E0D20A600CCAD39 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7C40D5B22E0D217900CCAD39 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		7CBAB5042E33422800CE6EC9 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		7CCE10DC2E142D94006E0C42 /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
 		7CCE10E02E167406006E0C42 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
@@ -34,7 +42,14 @@
 		7CCE10E62E167D7D006E0C42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7CCE10E82E168430006E0C42 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		7CCE10EA2E1684CD006E0C42 /* APIHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHost.swift; sourceTree = "<group>"; };
-		7CD692632E3353020038B3E8 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		7CD692652E336C4E0038B3E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7CD692682E3375640038B3E8 /* MyStockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStockView.swift; sourceTree = "<group>"; };
+		7CD6926A2E337B6A0038B3E8 /* MyStockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStockModel.swift; sourceTree = "<group>"; };
+		7CD6926C2E3389AA0038B3E8 /* MyStockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStockViewModel.swift; sourceTree = "<group>"; };
+		7CD6926F2E3CC5590038B3E8 /* MyStockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStockDetailView.swift; sourceTree = "<group>"; };
+		7CD692712E3CC5640038B3E8 /* MyStockDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStockDetailModel.swift; sourceTree = "<group>"; };
+		7CD692732E3CC5710038B3E8 /* MyStockDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStockDetailViewModel.swift; sourceTree = "<group>"; };
+		7CD692752E40AEDE0038B3E8 /* CurrencyHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,10 +82,13 @@
 		7C40D5A12E0A9BFF00CCAD39 /* SimpleStocks */ = {
 			isa = PBXGroup;
 			children = (
+				7CD692672E3375590038B3E8 /* MyStock */,
+				7CD692642E336C3E0038B3E8 /* Content */,
 				7CCE10E62E167D7D006E0C42 /* Info.plist */,
 				7C40D5A22E0A9BFF00CCAD39 /* SimpleStocksApp.swift */,
 				7CCE10E72E16841A006E0C42 /* Network */,
-				7CCE10E32E167521006E0C42 /* Content */,
+				7CCE10E32E167521006E0C42 /* Home */,
+				7CD692772E40AF0F0038B3E8 /* Helper */,
 				7CCE10E12E1674DC006E0C42 /* Bundle.swift */,
 				7CBAB5042E33422800CE6EC9 /* Debug.xcconfig */,
 				7CCE10E02E167406006E0C42 /* Release.xcconfig */,
@@ -88,14 +106,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		7CCE10E32E167521006E0C42 /* Content */ = {
+		7CCE10E32E167521006E0C42 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				7C40D5B22E0D217900CCAD39 /* ContentModel.swift */,
-				7C40D5B02E0D20A600CCAD39 /* ContentViewModel.swift */,
-				7C40D5A42E0A9BFF00CCAD39 /* ContentView.swift */,
+				7C40D5B22E0D217900CCAD39 /* HomeModel.swift */,
+				7C40D5B02E0D20A600CCAD39 /* HomeViewModel.swift */,
+				7C40D5A42E0A9BFF00CCAD39 /* HomeView.swift */,
 			);
-			path = Content;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		7CCE10E72E16841A006E0C42 /* Network */ = {
@@ -106,6 +124,43 @@
 				7CCE10E82E168430006E0C42 /* Endpoint.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		7CD692642E336C3E0038B3E8 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				7CD692652E336C4E0038B3E8 /* ContentView.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		7CD692672E3375590038B3E8 /* MyStock */ = {
+			isa = PBXGroup;
+			children = (
+				7CD6926E2E3CC54A0038B3E8 /* MyStockDetail */,
+				7CD692682E3375640038B3E8 /* MyStockView.swift */,
+				7CD6926C2E3389AA0038B3E8 /* MyStockViewModel.swift */,
+				7CD6926A2E337B6A0038B3E8 /* MyStockModel.swift */,
+			);
+			path = MyStock;
+			sourceTree = "<group>";
+		};
+		7CD6926E2E3CC54A0038B3E8 /* MyStockDetail */ = {
+			isa = PBXGroup;
+			children = (
+				7CD6926F2E3CC5590038B3E8 /* MyStockDetailView.swift */,
+				7CD692712E3CC5640038B3E8 /* MyStockDetailModel.swift */,
+				7CD692732E3CC5710038B3E8 /* MyStockDetailViewModel.swift */,
+			);
+			path = MyStockDetail;
+			sourceTree = "<group>";
+		};
+		7CD692772E40AF0F0038B3E8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7CD692752E40AEDE0038B3E8 /* CurrencyHelper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,13 +234,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CCE10EB2E1684CD006E0C42 /* APIHost.swift in Sources */,
+				7CD692722E3CC5640038B3E8 /* MyStockDetailModel.swift in Sources */,
+				7CD692692E3375640038B3E8 /* MyStockView.swift in Sources */,
 				7CCE10E92E168430006E0C42 /* Endpoint.swift in Sources */,
-				7C40D5A52E0A9BFF00CCAD39 /* ContentView.swift in Sources */,
+				7C40D5A52E0A9BFF00CCAD39 /* HomeView.swift in Sources */,
 				7CCE10E22E1674DC006E0C42 /* Bundle.swift in Sources */,
-				7C40D5B32E0D217900CCAD39 /* ContentModel.swift in Sources */,
+				7C40D5B32E0D217900CCAD39 /* HomeModel.swift in Sources */,
+				7CD692762E40AEDE0038B3E8 /* CurrencyHelper.swift in Sources */,
+				7CD692742E3CC5710038B3E8 /* MyStockDetailViewModel.swift in Sources */,
+				7CD692662E336C4E0038B3E8 /* ContentView.swift in Sources */,
+				7CD6926D2E3389AA0038B3E8 /* MyStockViewModel.swift in Sources */,
+				7CD6926B2E337B6A0038B3E8 /* MyStockModel.swift in Sources */,
 				7C40D5A32E0A9BFF00CCAD39 /* SimpleStocksApp.swift in Sources */,
-				7C40D5B12E0D20A600CCAD39 /* ContentViewModel.swift in Sources */,
+				7C40D5B12E0D20A600CCAD39 /* HomeViewModel.swift in Sources */,
 				7CCE10DD2E142D94006E0C42 /* APIServices.swift in Sources */,
+				7CD692702E3CC5590038B3E8 /* MyStockDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +314,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = NO;
 			};
 			name = Debug;
 		};
@@ -306,6 +370,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = NO;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -336,6 +401,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ivanriyanto.SimpleStocks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -368,6 +434,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ivanriyanto.SimpleStocks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

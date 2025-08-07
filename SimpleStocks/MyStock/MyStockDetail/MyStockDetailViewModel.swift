@@ -1,32 +1,32 @@
 //
-//  ContentViewModel.swift
+//  MyStockDetailViewModel.swift
 //  SimpleStocks
 //
-//  Created by Ivan Riyanto on 26/06/25.
+//  Created by Ivan Riyanto on 01/08/25.
 //
 
 import Foundation
-import SwiftUI
 
 @MainActor
-class StocksViewModel: ObservableObject {
-    @Published var price: String = "-"
+class MyStocksDetailViewModel: ObservableObject {
+    @Published var detail: MyStockDetailModel?
     @Published var isLoading = false
     @Published var errorMessage: String?
 
     //private let apiServices = MockAPIServices()
     private let apiServices = APIServices()
     
-    func getStockPrice(symbol: String) async {
+    
+    //Same function from MyStockViewModel, can be simplified by creating its own class
+    func getStockDetail(symbol: String) async {
         isLoading = true
         errorMessage = nil
         do {
-            let result = try await apiServices.fetchPrice(for: symbol)
-            price = String(result.price)
+            let result = try await apiServices.fetchStockDetail(for: symbol)
+            detail = result
         } catch {
             errorMessage = error.localizedDescription
         }
         isLoading = false
     }
 }
-
